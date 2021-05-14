@@ -11,17 +11,17 @@ public enum ESectorInfo
 
 public class BoardGenerator
 {
-    int[,] board;
-    int width;
-    int height;
-    int mineNum;
+    private int[,] mBoard;
+    private int mWidth;
+    private int mHeight;
+    private int mMineNum;
 
     public BoardGenerator(int width, int height, int mineNum)
     {
-        board = new int[width, height];
-        this.width = width;
-        this.height = height;
-        this.mineNum = mineNum;
+        mBoard = new int[width, height];
+        mWidth = width;
+        mHeight = height;
+        mMineNum = mineNum;
     }
 
     public ESectorInfo GetSectorInfoByCoordinate(int x, int y) 
